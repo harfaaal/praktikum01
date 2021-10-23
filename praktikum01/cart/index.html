@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <title>cart hoodie</title>
+</head>
+<body>
+  <header>
+    <nav> 
+      <ul class="logo">
+        <li>
+          <a href="">Site Name</a>
+        </li>
+      </ul>
+
+      <ul class="menu-ul"> 
+        <li> <!-- Home --> 
+          <a href="/">Home</a> |
+        </li> 
+        <li> <!--- Current -->
+          <a href="/events">Current Events</a> |
+        </li> 
+        <li> <!-- Contact -->
+          <a href="/contact">Contact us</a>
+        </li> 
+      </ul> 
+
+      <ul class="icon-ul">
+        <li>
+          <i class="bi bi-search"></i>
+        </li>
+        <li class="cart">
+          <i class="bi bi-cart"></i>
+          <p>Cart(1)</p>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <main>
+      <h1>Your Cart</h1>
+      <table>
+        <thead>
+          <tr>
+            <td class="col-head">Item</td>
+            <td class="col-head">Price</td>
+            <td class="col-head">Quantity</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="img-tshirt">
+              <img width="200" src="hoodieNCIT.jpg" alt="Hoodie NCIT">
+              <p>Hoodie <br> Size Small</p>
+            </td>
+            <td>
+              <b>$20.00</b>
+            </td>
+            <td>
+              <select name="" id="">
+                <option value="">1</option>
+                <option value="">2</option>
+              </select>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="col-head" colspan="3" align="right">Subtotal: <b>$20.00</b></td>
+          </tr>
+        </tfoot>
+      </table>
+    </main>
+
+    <aside>
+      <h2>Summary ( 1 item )</h2>
+      <table>
+        <tr>
+          <td>Subtotal</td>
+          <td align="right">$20.00</td>
+        </tr>
+        <tr>
+          <td>Shipping</td>
+          <td align="right">-</td>
+        </tr>
+        <tr>
+          <td>Est. Taxes</td>
+          <td align="right">-</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td align="right">$20.00</td>
+        </tr>
+      </table>
+      <a class="btn-checkout" href="checkout.html">Checkout</a>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="baris">
+      <a href="">Site Name</a>
+      <a href="">Category</a> |
+      <a href="">Category</a> |
+      <a href="">Category</a> 
+      <a href="">Stay In Touch</a>
+    </div>
+    <div class="baris">
+      <i class="bi bi-badge-ar-fill"></i>
+      <i class="bi bi-badge-ar-fill"></i>
+      <i class="bi bi-badge-ar-fill"></i>
+      <div class="input-subscribe" >
+        <input type="text" placeholder="Enter Email">
+        <p>Subscribe</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
