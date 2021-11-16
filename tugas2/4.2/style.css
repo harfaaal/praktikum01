@@ -1,0 +1,60 @@
+/* CSS checkout */
+
+.satu {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    background-color: rgb(162, 167, 170);
+  }
+  .dua {
+    list-style-type: none;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .tiga {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+    gap: 20px;
+    text-decoration: none;
+    align-items: center;
+  }
+  .empat {
+    display: flex;
+    gap: 20px;
+    margin-top: 100px;
+    padding: 10px;
+  }
+  .lima {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 15px;
+    list-style-type: none;
+  }
+  .enam {
+    width: 35%;
+    background-color: gray;
+    padding: 10px;
+    display: grid;
+    align-items: center;
+  }
+  .tujuh {
+    padding-left: 15px;
+    padding-top: 10px;
+    border-top: 1px solid white;
+  }
+  .delapan {
+    padding: 15px 0;
+    text-align: right;
+    border-top: solid 1px white;
+  }
+  .sembilan {
+    margin-top: 100px;
+    border-top: 1px solid black;
+    padding: 10px;
+    display: grid;
+    gap: 20px;
+  }
+  
