@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image picker</title>
+</head>
+<body>
+
+    <label for="hewan">Hewan</label>
+    <select id="hewan" onchange="cetakGambar()">
+        <option value="gorilla">gorilla</option>
+        <option value="anjing">anjing</option>
+        <option value="singa">singa</option>
+        <option value="gajah">gajah</option>
+    </select>
+
+    <img src="" id="gambar">
+    
+    <script>
+
+        function cetakGambar() {
+            const hewan = document.getElementById("hewan");
+            const gambar = document.getElementById("gambar");
+        
+            if (hewan.value === "gorilla") {
+                gambar.src = "https://img.europapress.es/fotoweb/fotonoticia_20170817161434_1024.jpg"
+            }
+
+            if( hewan.value === "anjing"){
+                gambar.src = "https://d1bpj0tv6vfxyp.cloudfront.net/articles/314611_4-11-2020_13-9-40.jpeg"
+            }
+
+            if (hewan.value === "singa"){
+                gambar.src = "https://www.google.com/search?q=SINGA&tbm=isch&source=iu&ictx=1&fir=LzporcmSn74QuM%252CkcdrMoVctRrLsM%252C%252Fm%252F096mb%253BB96AyyJLxSphdM%252CoY4stw3B-ep4EM%252C_%253BQExK6a1tPAuawM%252CcbnvTe3gtJ_GiM%252C_%253Bn52aH-39MhrbZM%252CV6vCFyqiMJWOiM%252C_%253B2IO8WDA45o-zbM%252CIsM5qNv2H8LeXM%252C_&vet=1&usg=AI4_-kSdOTslgHtqI2vK6pCBi-kU7JwDhw&sa=X&ved=2ahUKEwjNg4mF3_70AhUF6XMBHXk1C7QQ_B16BAg3EAE#imgrc=LzporcmSn74QuM"
+            }
+        }
+        
+    </script>
+</body>
+</html>        
+    
