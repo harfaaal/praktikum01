@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+body {
+background-color: slategrey;
+}
+.header {
+  background-color: skyblue;
+  padding: 3em;
+  text-align: center;
+  font-family: cursive;
+  font-size: larger;
+  color: rgb(74, 97, 228);
+}
+
+nav {
+  display: flex;
+
+  overflow: hidden;
+  background-color: rgb(2, 26, 94);
+}
+ul {
+  display: flex;
+  margin-left: auto;
+}
+nav li {
+  margin-right: 3em;
+  list-style-type: none;
+}
+a {
+  display: block;
+
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: rgb(118, 142, 248);
+}
+fieldset {
+  margin: 2em;
+  padding: 2em;
+  font-family: sans-serif;
+}
+.grid-container {
+  display: flex;
+}
+.B {
+  margin-top: 2em;
+  margin-right: 3em;
+}
+.text {
+  margin-right: 5em;
+}
+p {
+  display: block;
+  text-align: justify;
+}
+.article {
+  margin-top: 3em;
+}
+.C {
+  display: flex;
+  margin-top: 3em;
+}
+audio {
+  margin-left: 5em;
+}
+.container {
+  margin-left: 5em;
+}
+.container-atas {
+  display: flex;
+}
+.container-bawah {
+  display: flex;
+}
