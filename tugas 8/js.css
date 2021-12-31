@@ -1,0 +1,7 @@
+body{
+    background-color: aqua;
+}
+#hasil, #hasilluas{
+    background-color: beige;
+    border: 2px solid rgb(67, 185, 43);
+}
