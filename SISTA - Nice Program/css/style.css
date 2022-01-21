@@ -1,0 +1,39 @@
+body {
+    background-color: #FA8072;
+    color: black;
+    display: flex;
+    text-align: center;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: dodgerblue;
+    color: black;
+    text-align: center;
+}
+.nav-link{
+    margin: 0px 2px 0px 2px;
+}
+.page-header{
+    padding: 2em;
+}
+.deskripsi{
+    word-wrap: normal;
+}
+.nav-item:hover{
+    cursor: pointer;
+    background-color:dodgerblue;
+}
+.nav-link:hover{
+    cursor: pointer;
+    color: white !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}

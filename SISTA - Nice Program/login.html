@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SISTA</title>
+
+  <meta name="description" content="Source code generated using layoutit.com">
+  <meta name="author" content="LayoutIt!">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    
+  <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+  
+    
+  <style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+  
+  .login-page {
+    width: 360px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    background: #2196f3;
+    text-transform: uppercase;
+    outline: 0;
+    border: 0;
+    padding: 8px;
+    color: black;
+    font-size: 12px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #b3b3b3;
+    font-size: 12px;
+  }
+  .form .message a {
+    color: #56baed;
+    text-decoration: none;
+  }
+  .form .register-form {
+    display: none;
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .container .info {
+    margin: 50px auto;
+    text-align: center;
+  }
+  .container .info h1 {
+    margin: 0 0 15px;
+    padding: 0;
+    font-size: 36px;
+    font-weight: 300;
+    color: #56baed;
+  }
+  .container .info span {
+    color: #56baed;
+    font-size: 12px;
+  }
+  .container .info span a {
+    color: #56baed;
+    text-decoration: none;
+  }
+  .container .info span .fa {
+    color: #EF3B3A;
+  }
+  body {
+
+    background: url(nf.jpg);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;      
+  }
+  </style>
+  
+    <script>
+    window.console = window.console || function(t) {};
+  </script>
+  
+    
+    
+    <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+  
+  
+  </head>
+  
+  <body translate="no">
+    <div class="login-page">
+    <div class="form">
+      <form class="register-form">
+        <input type="text" placeholder="name" required>
+        <input type="password" placeholder="password" required>
+        <input type="email" placeholder="email address" required>
+        <button type="submit"><a href="index.html">Create</a></button>
+        <p class="message">Already registered? <a href="#">Sign In</a></p>
+      </form>
+      <form class="login-form">
+        <input type="text" placeholder="username" id="username" name="username">
+        <input type="password" placeholder="password" id="password" name="password">
+        <button type="submit" onclick="return login()"><a href="home.html">Login</a></button>
+        <p class="message">Not registered?<a href="#s">Create an account</a></p>
+      </form>
+    </div>
+  </div>
+      <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script id="rendered-js">
+  $('.message a').click(function () {
+    $('form').animate({ height: "toggle", opacity: "toggle" }, "slow");
+  });
+  //# sourceURL=pen.js
+  function login() {
+		username = document.getElementById("username").value;
+		password = document.getElementById("password").value;
+
+		if (username == "" || password == "") {
+			alert("Username / Password Tidak Boleh Kosong");
+			return false;
+		}
+		else if (password.length < 8) {
+			alert("Password Kurang dari 8");
+			return false;
+		}
+		else if (username == "niceprogram" && password == "Sista022") {
+			window.location = "jadwal.html";
+			return false;
+		}
+    else if (username == "NovalIlham" && password == "noval123") {
+			window.location = "jadwal.html";
+			return false;
+		}
+    else if (username == "AuliaHarfa" && password == "aulia123") {
+			window.location = "jadwal.html";
+			return false;
+		}
+		else if (username == "RendraRidho" && password == "danda123") {
+			window.location = "jadwal.html";
+      return false;
+    }
+    else if (username == "Nurhalimah" && password == "nur12345") {
+			window.location = "jadwal.html";
+			return false;
+		}
+    else if (username == "MerriUtami" && password == "merri123") {
+			window.location = "jadwal.html";
+			return false;
+
+		}else{
+      alert("Username / Password anda salah");
+    }
+      function load() {
+        alert("username : niceprogram & password : Sista022");
+    }
+  
+}
+ </script>
+ 
+    <footer class="footer bg-primary mt-1">
+      <div class="row">
+          <div class="col">
+          </div>
+          <div>
+              <p class="text-white mb-0">Nice Program @2022</p>
+          </div>
+      </div>
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+  </body>
+  </html>

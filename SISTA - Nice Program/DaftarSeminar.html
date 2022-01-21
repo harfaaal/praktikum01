@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SISTA</title>
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    
+
+  </head>
+  <body style="background: transparent;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="page-header">
+            <h1>
+              Sistem Informasi Seminar Tugas Akhir - SISTA
+            </h1>
+          </div>
+          <nav class="navbar navbar-toggleable-lg navbar-fixed-top navbar-light bg-primary">
+				 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                   <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                   <a class="nav-link" href="jadwal.html">Jadwal </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="DaftarSeminar.html">Daftar Seminar </a>
+                 </li>
+                 <li class="nav-item active">
+                <a class="nav-link" href="berita.html">Berita </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="admin.html">admin<span class="sr-only">(current)</span></a>
+                
+                <li class="nav-item active">
+                  <a class="nav-link" href="login.html">Logout<span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <br> <br>
+
+      <h3>
+        Pendaftaran Seminar berlaku Untuk mahasiswa yang telah mendapat persetujuan dari Pembimbing TA
+      </h3> 
+      <br>
+      <fieldset style="border: 1px solid black; padding:2%;">
+        <legend style="padding-bottom: 2%;">Form Daftar Seminar TA </legend>
+        <form>
+          <div class="form-group row">
+            <label for="NIM" class="col-4 col-form-label">NIM :</label> 
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-credit-card-alt"></i>
+                  </div>
+                </div> 
+                <input id="NIM" name="NIM" placeholder="Masukan NIM Anda " type="number" class="form-control" required="required">
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Nama" class="col-4 col-form-label">Nama :</label> 
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-address-card-o"></i>
+                  </div>
+                </div> 
+                <input id="Nama" name="Nama" placeholder="Masukan Nama Anda" type="text" required="required" class="form-control">
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Prodi" class="col-4 col-form-label">Prodi</label> 
+            <div class="col-8">
+              <select id="Prodi" name="Prodi" required="required" class="custom-select">
+                <option value="SI">Sistem Informasi</option>
+                <option value="TI">Teknik Infomatika</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Tanggal" class="col-4 col-form-label">Tanggal Seminar</label> 
+            <div class="col-8">
+              <div class="input-group">
+                <input id="Tanggal" name="Tanggal" type="date" class="input" required="required"> 
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Tanggal" class="col-4 col-form-label">Jam Seminar</label> 
+            <div class="col-8">
+              <div class="input-group">
+                <input id="Tanggal" name="Tanggal" type="time" class="input" required="required"> 
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Ruangan" class="col-4 col-form-label">Ruangan</label> 
+            <div class="col-8">
+              <select id="Ruangan" name="Ruangan" class="custom-select" required="required">
+                <option value="Online">Online</option>
+                <option value="B2304">B2304</option>
+                <option value="fish">Fish</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="judul" class="col-4 col-form-label">Judul TA</label> 
+            <div class="col-8">
+              <textarea id="judul" name="judul" cols="40" rows="6" class="form-control" required="required"></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Seminar" class="col-4 col-form-label">Seminar</label> 
+            <div class="col-8">
+              <select id="Seminar" name="Seminar" class="custom-select" required="required">
+                <option value="Proposal">Proposal</option>
+                <option value="SH">Seminar Hasil</option>
+                <option value="SA">Seminar Akhir</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Pembimbing" class="col-4 col-form-label">Pembimbing</label> 
+            <div class="col-8">
+              <select id="Pembimbing" name="Pembimbing" class="custom-select" required="required">
+                <option value="PAK ROJUL">Sirojul Munir S.SI, M.KOM</option>
+                <option value="Aufa Billah">Yazid Supriadi</option>
+                <option value="Atrisa">Aufa</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Penguji 2 " class="col-4 col-form-label">Penguji 1</label> 
+            <div class="col-8">
+              <select id="Penguji 2 " name="Penguji 2 " class="custom-select" required="required">
+                <option value="RIO">Ahmad Rio M.SI</option>
+                <option value="Rahmah">Amalia Rahmah M.SI</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="Penguji 2" class="col-4 col-form-label">Penguji 2</label> 
+            <div class="col-8">
+              <select id="Penguji 2" name="Penguji 2" class="custom-select" required="required">
+                <option value="Rahmah">Amalia Rahmah M.T</option>
+                <option value="Rio">Ahmad Rio M.SI</option>
+              </select>
+            </div>
+          </div> 
+          <div class="form-group row">
+            <div class="offset-4 col-8">
+              <button name="submit" type="submit" class="btn btn-primary"> Daftar</button>
+            </div>
+          </div>
+        </form>
+      </fieldset>
+      <footer class="footer bg-primary mt-2">
+        <div class="row">
+            <div class="col">
+            </div>
+            <div>
+                <p class="text-white mb-0">STT Terpadu Nurul Fikri @2022</p>
+            </div>
+        </div>
+    </footer>
+ </div>
+</div>
+<script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/scripts.js"></script>
+      

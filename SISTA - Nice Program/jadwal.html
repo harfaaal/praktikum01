@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title>SISTA</title>
+
+    <meta name="description" content="Source code generated using layoutit.com">
+    <meta name="author" content="LayoutIt!">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/carousel.css">
+  </head>
+  <body style="background: transparent;">
+
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<div class="page-header">
+				<h1>
+					Sistem Informasi Seminar Tugas Akhir - SISTA
+				</h1>
+			</div>
+			<nav class="navbar navbar-toggleable-lg navbar-fixed-top navbar-light bg-primary">
+				 
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							 <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							 <a class="nav-link" href="jadwal.html">Jadwal <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="DaftarSeminar.html">Daftar Seminar <span class="sr-only">(current)</span></a>
+					   </li>
+					   <li class="nav-item active">
+						<a class="nav-link" href="berita.html">berita <span class="sr-only">(current)</span></a>
+					   </li>
+					</ul>
+					<ul class="navbar-nav ml-md-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="admin.html">admin<span class="sr-only">(current)</span></a>
+						<li class="nav-item active">
+							<a class="nav-link" href="login.html">Logout<span class="sr-only">(current)</span></a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<br>
+			<h3>Alur Seminar/Tugas Akhir</h3>
+			<br>
+			<div class="container-fluid" style="display: flex; justify-content: space-around;">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card" style="width: 10rem;">
+									<img class="card-img-top" alt="Bootstrap Thumbnail First" src="alur1.png">
+									<div class="card-block">
+										<h5 class="card-title">
+											Pembimbing TA
+										</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card">
+									<img class="card-img-top" alt="Bootstrap Thumbnail Second" src="2alur.jpg">
+									<div class="card-block">
+										<h5 class="card-title">
+											Konsultasi
+										</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card">
+									<img class="card-img-top" alt="Bootstrap Thumbnail Third" src="alur3.jpg">
+									<div class="card-block">
+										<h5 class="card-title">
+											Pendaftaran Seminar
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row">
+							<div class="col-md-4">
+								<div class="card" style="width: 10rem;">
+									<img class="card-img-top" alt="Bootstrap Thumbnail First" src="smnr.jpg">
+									<div class="card-block">
+										<h5 class="card-title">
+											Seminar Proposal
+										</h5>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="card">
+									<img class="card-img-top" alt="Bootstrap Thumbnail Second" src="alur5.jpg">
+									<div class="card-block">
+										<h5 class="card-title">
+											Proposal Diterima
+										</h5>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="table-responsive">
+				<table class="table table-bordered table table-dark table-striped table-hover">
+					<thead>
+						<tr>
+							<th>
+								no
+							</th>
+							<th>
+								NIM
+							</th>
+							<th>
+								Mahasiswa/i
+							</th>
+							<th>
+								Seminar
+							</th>
+							<th>
+								waktu
+							</th>
+							<th>
+								Ruangan
+							</th>
+							<th>
+								Detail
+							</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="table-primary">
+							<td>
+								1
+							</td>
+							<td>
+								0110121298
+							</td>
+							<td>
+								Mochamad Noval Ilham Maliki
+							</td>
+							<td>
+								Seminar Akhir
+							</td>
+							<td>
+								11.11 17-01-2022
+							</td>
+							<td>
+								Online
+							</td>
+							<td>
+								<a href="seminarta.html">Lihat</a>
+							</td>
+						</tr>
+						<tr class="table-danger">
+							<td>
+								2
+							</td>
+							<td>
+								0110121310
+							</td>
+							<td>
+								Muhammad Rendra Ridho
+							</td>
+							<td>
+								Seminar Hasil
+							</td>
+							<td>
+								14.00 08-01-2022
+							</td>
+							<td>
+								Online
+							</td>
+							<td>
+								<a href="#">Lihat</a>
+							</td>
+						</tr>
+
+						<tr class="table-success">
+							<td>
+								3
+							</td>
+							<td>
+								0110121297
+							</td>
+							<td>
+								Aulia Harfa Lutfisa
+							</td>
+							<td>
+								Sidang Akhir
+							</td>
+							<td>
+								10.00 8-01-2022
+							</td>
+							<td>
+								B2304
+							</td>
+							<td>
+								<a href="#">Lihat</a>
+							</td>
+							</td>
+						</tr>
+						   <tr class="table-success">
+							<td>
+								4
+							</td>
+							<td>
+								0110121302
+							</td>
+							<td>
+								Merri Utami
+							</td>
+							<td>
+								Sidang Akhir
+							</td>
+							<td>
+								14.00 16-01-2022
+							</td>
+							<td>
+								B2304
+							</td>
+							<td>
+								<a href="#">Lihat</a>
+							</td>
+							</td>
+							<tr class="table-primary">
+								<td>
+									5
+								</td>
+								<td>
+									0110121306
+								</td>
+								<td>
+									Nurhalimah
+								</td>
+								<td>
+									Propasal
+								</td>
+								<td>
+									14.00 09-01-2022
+								</td>
+								<td>
+									Online
+								</td>
+								<td>
+									<a href="#">Lihat</a>
+								</td>
+							</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<footer class="footer bg-primary mt-2">
+		<div class="row">
+		  <div class="col">
+			</div>
+			<div>
+			  <p class="text-white mb-0">STT Terpadu Nurul Fikri @2022</p>
+			</div>
+		  </div>
+	  </footer>
+	</body>
+	</html>
+  </body>
+</html>
+
